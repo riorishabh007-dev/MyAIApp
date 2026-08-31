@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050811"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E.D.D.Y."
+        android:textColor="#00FFA3"
+        android:letterSpacing="0.25"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/systemStateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEURAL CORE: STANDBY"
+        android:textColor="#455A64"
+        android:textSize="11sp"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#0C1322"
+        android:padding="14dp"
+        android:layout_marginBottom="16dp">
+        <TextView
+            android:id="@+id/statusConsole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[E.D.D.Y. Sentient Core Online]\nTap 'TEST VOICE' or say 'Eddy' to talk or create anything.\n"
+            android:textColor="#ECEFF1"
+            android:textSize="13sp"
+            android:lineSpacingExtra="3dp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSpeakNow"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:backgroundTint="#00FFA3"
+        android:text="🎤 TEST VOICE (TAP &amp; TALK)"
+        android:textColor="#050811"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnToggleWake"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="#152238"
+        android:text="⚡ 24/7 BACKGROUND SERVICE"
+        android:textColor="#00FFA3"
+        android:textSize="12sp"
+        android:layout_marginBottom="6dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set API Key"
+            android:textColor="#00FFA3"
+            style="@style/Widget.MaterialComponents.Button.TextButton" />
+        <Button
+            android:id="@+id/btnAccessibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accessibility"
+            android:textColor="#80D8FF"
+            style="@style/Widget.MaterialComponents.Button.TextButton" />
+    </LinearLayout>
+</LinearLayout>
